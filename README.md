@@ -5,12 +5,15 @@ I redesigned Nike's popular product page in a minimalist way. It's free for anyo
 ## Images
 
 Mobile
+
 ![image](https://i.ibb.co/vZsHq7G/Screenshot-2024-08-13-021217.png)
 
 Tablet
+
 ![image](https://i.ibb.co/dQLt6hg/Screenshot-2024-08-13-020749.png)
 
 Desktop
+
 ![image](https://i.ibb.co/Fnn8DHd/Screenshot-2024-08-13-020759.png)
 
 ## Install
