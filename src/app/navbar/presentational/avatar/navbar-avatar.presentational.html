@@ -1,0 +1,15 @@
+<div class="flex gap-1 items-center mr-2 hover:cursor-pointer">
+  <img
+    class="rounded-full w-12 p-1"
+    alt="{{fullname}}'s profile picture"
+    src="{{userProfilePictureImgSrcUrl}}"
+  />
+  <button [matMenuTriggerFor]="appMenu" class="flex justify-center">
+    <span class="hover:underline text-base">{{fullname}}</span>
+    <mat-icon>keyboard_arrow_down</mat-icon>
+  </button>
+</div>
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item><mat-icon>settings</mat-icon> Settings</button>
+  <button mat-menu-item><mat-icon>exit_to_app</mat-icon>Logout</button>
+</mat-menu>

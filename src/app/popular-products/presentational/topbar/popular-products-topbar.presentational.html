@@ -1,0 +1,24 @@
+<div class="p-2 mt-3 bg-gray-50 rounded m-2 flex justify-between">
+  <h1 class="text-gray-800 !m-0 text-lg flex items-center !p-1 gap-2">
+    <mat-icon>assessment</mat-icon> Popular Products
+  </h1>
+
+  <div class="flex mr-2">
+    <div
+      [matMenuTriggerFor]="appMenu"
+      class="flex items-center gap-1 cursor-pointer"
+    >
+      <mat-icon>filter_list</mat-icon>
+      <span>By {{filterType}}</span>
+    </div>
+  </div>
+</div>
+
+<mat-menu #appMenu="matMenu">
+  <button (click)="changeFilterType(filterTypes.votes)" mat-menu-item>
+    By Votes
+  </button>
+  <button (click)="changeFilterType(filterTypes.sales)" mat-menu-item>
+    By Sales
+  </button>
+</mat-menu>

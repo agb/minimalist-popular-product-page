@@ -1,0 +1,18 @@
+<div class="container mx-auto">
+  <app-popular-products-topbar-presentational
+    (filterTypeEvent)="changeFilterType($event)"
+  ></app-popular-products-topbar-presentational>
+
+  <div class="products flex flex-col lg:grid lg:grid-cols-2 mx-2 gap-2">
+    <div *ngFor="let product of products">
+      <app-popular-product-presentational
+        [productTitle]="product.title"
+        [productCreatorImageSrc]="product.creatorAvatarSourceUrl"
+        [productDescription]="product.description"
+        [productImages]="product.productsImages"
+        [productCreator]="product.creator"
+        [productTrendCount]="getTrendCountByFilter(product.votes,product.sales)"
+      ></app-popular-product-presentational>
+    </div>
+  </div>
+</div>
